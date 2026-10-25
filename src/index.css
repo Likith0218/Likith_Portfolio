@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* ---- Brand tokens: change colours/fonts here, the whole site updates ---- */
+@theme {
+  --color-brand-orange: #ee6847;
+  --color-brand-blue: #a0c3f8;
+  --color-brand-indigo: #7b87df;
+  --color-brand-plum: #3b1f5c;
+  --color-brand-cream: #fff6f0;
+  --font-display: "Anton", "Impact", sans-serif;
+  --font-body: "Barlow Condensed", "Arial Narrow", sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-brand-orange);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* CSS-only marquee (zero JS cost) */
+@keyframes marquee { to { transform: translateX(-50%); } }
+.marquee-track { animation: marquee 22s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+@keyframes bob { 50% { transform: translateY(6px); } }
+.bob { animation: bob 1.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track, .bob { animation: none; }
+}

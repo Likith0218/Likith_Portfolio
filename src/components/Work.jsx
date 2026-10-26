@@ -26,9 +26,8 @@ export default function Work() {
           <button
             key={c}
             onClick={() => setActive(c)}
-            className={`rounded-full border-2 border-brand-plum px-5 py-1 text-xl uppercase transition-colors ${
-              active === c ? "bg-brand-plum text-white" : "hover:bg-brand-plum/10"
-            }`}
+            className={`rounded-full border-2 border-brand-plum px-5 py-1 text-xl uppercase transition-colors ${active === c ? "bg-brand-plum text-white" : "hover:bg-brand-plum/10"
+              }`}
           >
             {c}
           </button>
@@ -65,8 +64,8 @@ export default function Work() {
                     <span>{p.year}</span>
                   </div>
                   <div className="flex items-end justify-between">
-                    <h3 className="font-display text-4xl uppercase leading-none md:text-5xl">{p.title}</h3>
-                    <span className="text-4xl transition-transform duration-300 group-hover:-rotate-45">→</span>
+                    <h3 className="font-display text-4xl uppercase leading-none md:text-5xl pb-12">{p.title}</h3>
+                    <span className="text-4xl transition-transform duration-300 group-hover:-rotate-45 pb-12">→</span>
                   </div>
                 </div>
               </Tag>

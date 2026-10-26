@@ -7,12 +7,12 @@ export const site = {
   photo: "/me.webp", // your photo: replace public/me.webp (or set to null to hide)
   tagline: ["WEB DESIGN", "GRAPHIC DESIGN"],
   footerLine: "FREELANCE CREATIVE & GRAPHIC DESIGN",
-  email: "your@email.com", // <- change
+  email: "Likithgowda@gmail.com",
   socials: [
-    { label: "Instagram", href: "#" },
-    { label: "Github", href: "#" },
-    { label: "Pintrest", href: "#" },
-    { label: "LinkedIn", href: "#" },
+    { label: "Instagram", href: "https://www.instagram.com/bylkthh/" },
+    { label: "Github", href: "https://github.com/Likith0218" },
+    { label: "Pintrest", href: "https://in.pinterest.com/likithgowda0895" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/likith-c018" },
   ],
 };
 
